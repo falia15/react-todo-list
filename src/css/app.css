@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  font-family: Arial;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.header {
+  color: white;
+  background-color: #F33547;
+  padding: 10px;
+}
+
+.block, header {
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.form--checkbox label, .form--checkbox .form__text, .form--checkbox .form__btn {
+  margin: 15px;
+}
+.form--checkbox label {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid #c8c9ca;
+  width: 5px;
+  height: 5px;
+}
+.form--checkbox input:checked + label {
+  background-color: #F33547;
+}
+.form--checkbox input {
+  position: absolute;
+  left: -9999px;
+}
+.form--checkbox .form__btn {
+  flex: 2;
+  text-align: right;
+}
+.form--checkbox .form__btn button {
+  background-color: #F33547;
+  width: 25px;
+  height: 25px;
+  border: white;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=text] {
+  padding: 5px;
+  border: 2px solid #c8c9ca;
+}
+
+input[type=text]:focus {
+  border-color: #aeb0b1;
+}
+
+input[type=submit] {
+  padding: 5px 15px;
+  background: #F33547;
+  color: white;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=app.css.map */

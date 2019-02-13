@@ -1,3 +1,10 @@
+## React Todo List
+
+Small Project inspired by Traversy Media's course
+
+[Link of course](https://youtu.be/sBws8MSXN7A)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

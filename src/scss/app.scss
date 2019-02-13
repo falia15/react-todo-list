@@ -1,0 +1,104 @@
+// sass --watch src/scss/app.scss src/css/app.css
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+$grey: rgb(200, 201, 202);
+$primary: #F33547;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+body {
+  font-family: Arial;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+// block
+.container {
+  padding: 0 1rem;
+}
+
+.header {
+  color: white;
+  background-color: $primary;
+  padding: 10px;
+}
+
+.block, header {
+  margin-bottom: 15px;
+}
+
+// form
+.form {
+  display: flex;
+  width: 100%;
+}
+
+.form--checkbox {
+
+  label, .form__text, .form__btn {
+    margin: 15px;
+  }
+
+  // custom checkbox style
+  label {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid $grey;
+    width: 5px;
+    height: 5px;
+  }
+
+  input:checked + label {
+    background-color: $primary;
+  }
+
+  // hide input
+  input {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .form__btn {
+    flex: 2;
+    text-align: right;
+
+    button {
+      background-color: $primary;
+      width: 25px;
+      height: 25px;
+      border: white;
+      border-radius: 5px; 
+      color: white;
+      cursor:pointer;
+    }
+  }
+
+}
+
+input[type=text] {
+  padding:5px; 
+  border:2px solid $grey; 
+}
+
+input[type=text]:focus {
+  border-color: darken($grey, 10%);
+}
+
+input[type=submit] {
+  padding:5px 15px; 
+  background:#F33547;
+  color: white;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
